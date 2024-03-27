@@ -1,0 +1,103 @@
+/* Curved bg with SVG via https://www.shapedivider.app/ */
+
+.firstWave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .firstWave svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 120px;
+  }
+  
+  .firstWave .shape-fill {
+    fill: #222831;
+  }
+
+  .firstWave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.firstWave2 svg {
+    position: relative;
+    display: block;
+    width: calc(168% + 1.3px);
+    height: 133px;
+}
+
+.firstWave2 .shape-fill {
+    fill: #222831;
+}
+
+  .secondWave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.secondWave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 170px;
+}
+
+.secondWave .shape-fill {
+    fill: #222831;
+}
+
+.thirdWave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.thirdWave svg {
+  position: relative;
+  display: block;
+  width: calc(140% + 1.3px);
+  height: 100px;
+}
+
+.thirdWave .shape-fill {
+  fill: #76ABAE;
+}
+  
+.fourthOne {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.fourthOne svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 383px;
+  transform: rotateY(180deg);
+}
+
+.fourthOne .shape-fill {
+  fill: #202731;
+}
+ 
