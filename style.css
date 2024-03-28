@@ -17,6 +17,7 @@ body {
   color: white;
   background: #202731;
   overflow-x: hidden;
+  font-family: Permanent Marker;
 }
 
 
@@ -75,13 +76,35 @@ li {
 }
 
 .exp {
-  position: absolute;
-  left: 0px;
-  margin-left: 35px;
+  display: flex;
+  justify-content: space-around;
+ 
+  margin-left: -165px;
   font-family: 'Prompt', sans-serif;
- top: 400px;
+  
+}
+.exp li {
+  padding: 60px;
+  font-family: Permanent Marker;
 }
 
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin-top: 65px;
+  margin-left: 100px;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: white;
+  -webkit-mask: radial-gradient(circle closest-side at 50% 40%,#0000 94%, #000);
+  transform-origin: 50% 40%;
+  animation: l25 1s infinite linear;
+}
+@keyframes l25 {
+  100% {transform: rotate(1turn)}
+}
 .fourth {
   background-color: #76ABAE;
   padding-top: 500px;
@@ -89,7 +112,7 @@ li {
 
 .fourth h1 {
   position: absolute;
-  left: 0px;
+  text-align: center;
   margin-left: 100px;
   top: 300px;
 }
