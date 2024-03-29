@@ -5,12 +5,6 @@
   font-style: normal;
 }
 
-h1 {
-  font-size: 4rem;
-}
-p {
-  font-size: 1.5rem;
-}
 body {
   margin: 0;
   font-family: 'Prompt', sans-serif;
@@ -19,8 +13,14 @@ body {
   overflow-x: hidden;
   font-family: Permanent Marker;
 }
+h1 {
+  font-size: 4rem;
+}
+p {
+  font-size: 1.5rem;
+}
 
-
+/* animação titulo */
 .flip-animate {
   color: #202731;
   text-decoration: none;
@@ -70,10 +70,12 @@ body {
   &:focus span:before {
     color: white;
   }
-}
 
+
+}
+ /* deixa o subtitulo embaixo nao sei pq sem nao funciona */
 .subTitle {
-  padding-top: 300px;
+  padding-top: 300px; 
 }
 
 section {
@@ -85,6 +87,7 @@ section {
   padding:  100px 20vw;
 }
 
+/* define as carac da section first */
 .first {
   background: #76ABAE;
   color: black; 
@@ -113,6 +116,8 @@ section {
   padding: 80px;
   padding-bottom: 10px;
 }
+
+/* lista estudos */
 ul {
   list-style-type: none;
   margin-left: 570px;
@@ -128,59 +133,7 @@ li {
   line-height: 10rem;
   padding: 0;
 }
-
-.exp {
-  display: flex;
-  justify-content: space-around;
- 
-  margin-left: -165px;
-  font-family: 'Prompt', sans-serif;
-  
-}
-.exp li {
-  padding: 60px;
-  font-family: Permanent Marker;
-}
-
-
-
-/* HTML: <div class="loader"></div> */
-.loader {
-  margin-top: 65px;
-  margin-left: 100px;
-  width: 50px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: white;
-  -webkit-mask: radial-gradient(circle closest-side at 50% 40%,#0000 94%, #000);
-  transform-origin: 50% 40%;
-  animation: l25 1s infinite linear;
-}
-@keyframes l25 {
-  100% {transform: rotate(1turn)}
-}
-.fourth {
-  background-color: #76ABAE;
-  padding-top: 500px;
-}
-
-.fourth h1 {
-  position: absolute;
-  text-align: center;
-  margin-left: 100px;
-  top: 300px;
-}
-
-.secondToLast {
-  background: #0f0f10;
-  padding: 10px;
-}
-
-/* .last {
- 
-} */
-
-/* Blobs SVG background image via https://haikei.app/ */
+/* blob animation */
 
 .blob-motion {
   position: absolute;
@@ -196,4 +149,49 @@ li {
 .blobs {
   width: 100%;
   background: url('./blobs.svg') no-repeat bottom / cover;
+}
+
+/* experiencias */
+.exp {
+  display: flex;
+  justify-content: space-around;
+ 
+  margin-left: -165px;
+  font-family: 'Prompt', sans-serif;
+  
+}
+.exp li {
+  padding: 60px;
+  font-family: Permanent Marker;
+}
+
+
+
+/* loader na experiencias */
+.loader {
+  margin-top: 65px;
+  margin-left: 100px;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: white;
+  -webkit-mask: radial-gradient(circle closest-side at 50% 40%,#0000 94%, #000);
+  transform-origin: 50% 40%;
+  animation: l25 1s infinite linear;
+}
+@keyframes l25 {
+  100% {transform: rotate(1turn)}
+}
+
+
+.fourth {
+  background-color: #76ABAE;
+  padding-top: 500px;
+}
+
+.fourth h1 {
+  position: absolute;
+  text-align: center;
+  margin-left: 100px;
+  top: 300px;
 }
