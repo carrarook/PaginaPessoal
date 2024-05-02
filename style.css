@@ -217,7 +217,7 @@ transform: translate(-50%, -50%);
 white-space: nowrap;
 }
 
-@charset "UTF-8";
+
 
 .svg-inline--fa {
 vertical-align: -0.200em;
@@ -253,10 +253,6 @@ margin-bottom: 0.25rem;
         transform: rotate(360deg);
 }
 
-.rounded-social-buttons .fa-whatsapp, .fa-github, .fa-linkedin, .envelope, {
-font-size:25px;
-}
-
 
 .rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
 background: #202731;
@@ -283,4 +279,23 @@ border-color: #007bb5;
     
     
     border-color: #fefefe;
+}
+
+.formContato {
+  text-align: center;
+}
+
+.formContato form {
+  display: grid;
+  width: calc(100% - 70%);
+  margin: auto auto;
+  grid-column-gap: 20px; 
+  margin-bottom: 20px;
+  
+}
+
+.Nome , .Email , .Telefone {
+  border: solid black;
+  border-radius: 5px;
+  height: 35px;
 }
