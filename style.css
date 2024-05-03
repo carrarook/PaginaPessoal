@@ -294,8 +294,18 @@ border-color: #007bb5;
   
 }
 
-.Nome , .Email , .Telefone {
+#Nome , #Email , #Telefone, #Enviar {
   border: solid black;
   border-radius: 5px;
   height: 35px;
+  font-family: Permanent Marker;
+  font-size: 15px;
+  text-align: center;
+}
+
+#Enviar {
+  background-color: #76ABAE;
+  border-radius: 10px;
+  font-family: Permanent Marker;
+  font-size: 15px;
 }
