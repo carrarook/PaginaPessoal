@@ -6,6 +6,13 @@ const tween = KUTE.fromTo(
     { path: '#blob2' },
     { repeat: 999, duration: 3000, yoyo: true }
   ).start();
+
+  const bgbtn = KUTE.fromTo(
+    '#blob1',
+    { path: '#blob1' },
+    { path: '#blob2' },
+    { repeat: 999, duration: 3000, yoyo: true }
+  ).start();
   
   function createJson(event) {
     event.preventDefault(); 
@@ -24,5 +31,12 @@ const tween = KUTE.fromTo(
     console.log(JSON.parse(localStorage.getItem("Contato")));
 
     document.getElementById("formContato").reset();
+
+    Swal.fire({
+      title: 'Contato Enviado!',
+      icon: 'success',
+      showConfirmButton: false,
+      timer: 1500
+  });
 
   }

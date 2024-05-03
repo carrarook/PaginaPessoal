@@ -1,4 +1,4 @@
-/* Curved bg with SVG via https://www.shapedivider.app/ */
+
 
 .firstWave {
     position: absolute;
@@ -101,3 +101,17 @@
   fill: #202731;
 }
  
+/* blob */
+
+.blob-motion {
+  position: absolute;
+  transform: translateY(-10%);
+  transform: translateX(-35%);
+  z-index: 0 ;
+}
+
+.blobs {
+  width: 100%;
+  background: url('./blobs.svg') no-repeat bottom / cover;
+}
+

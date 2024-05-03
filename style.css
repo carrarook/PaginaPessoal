@@ -135,21 +135,7 @@ li {
 }
 /* blob animation */
 
-.blob-motion {
-  position: absolute;
-  transform: translateY(-10%);
-  transform: translateX(-35%);
-  z-index: 0 ;
-}
 
-.blob-content {
-  z-index: 1;
-}
-
-.blobs {
-  width: 100%;
-  background: url('./blobs.svg') no-repeat bottom / cover;
-}
 
 /* experiencias */
 .exp {
@@ -308,4 +294,20 @@ border-color: #007bb5;
   border-radius: 10px;
   font-family: Permanent Marker;
   font-size: 15px;
+}
+
+input[type="submit"]{
+  border: solid black;
+  border-radius: 5px;
+  height: 35px;
+  font-family: Permanent Marker;
+  font-size: 15px;
+  text-align: center;
+  background-color: #76ABAE;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #598083;
 }
