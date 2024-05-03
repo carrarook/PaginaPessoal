@@ -143,16 +143,20 @@
   
   <div class="formContato">
     <h1>Prefere deixar seu contato?</h1>
-    <form>
-      <input type="text" class = "Nome" placeholder="Insira seu nome"> 
+    <form id="formContato" onsubmit="createJson(event)">
+      <input type="text" id = "Nome" placeholder="Insira seu nome"> 
       <br>
-      <input type="email" class = "Email" placeholder="Insira seu E-mail"> 
+      <input type="email" id = "Email" placeholder="Insira seu E-mail"> 
       <br>
-      <input type="tel" class = "Telefone" placeholder="Insira seu telefone"> 
-    </form>
+      <input type="tel" id = "Telefone" placeholder="Insira seu telefone"> 
+      <br>
+      <button type="submit" id="Enviar" >Enviar Contato</button>
+      </form>
   </div>
   </footer>
   <script src="scripts.js"></script>
 </body>
 
 </html>
+
+<!-- Adicionar notific de form enviado e ver se da p coloca svg como bg do btn q dai ta zero bala  -->
