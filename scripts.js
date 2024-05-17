@@ -46,21 +46,17 @@ const tween = KUTE.fromTo(
   const url = 'https://api.github.com/users/carrarook/repos'
   async function fetchData() {
     try {
-        // Realiza a solicitação GET
         const response = await fetch(url);
-
-        // Verifica se a solicitação foi bem-sucedida
         if (!response.ok) {
             throw new Error('Erro na solicitação: ' + response.statusText);
         }
 
-        // Converte a resposta para JSON
+        // Converte pra JSON
         const repos = await response.json();
-
-        // Exibe os dados no console (ou faça algo útil com os dados)
+        
         console.log(repos);
     } catch (error) {
-        // Lida com erros
         console.error('Erro:', error);
     }
 }
+listRepo()
