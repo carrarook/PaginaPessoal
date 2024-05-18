@@ -169,101 +169,102 @@ li {
   100% {transform: rotate(1turn)}
 }
 
-.fourth {
-  
+.fourth h1 {
+  text-align: center;
 }
 
-.whiskey-cards {
+.cardRepo-cards {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
-  padding: 48px 48px 0 48px;
+    padding: 48px 48px 0 48px;
 
 }
 
-.whiskey-cards::-webkit-scrollbar {
+.cardRepo-cards::-webkit-scrollbar {
   -webkit-appearance: none;
-  width: 5px;
-  height: 5px;
+    width: 5px;
+    height: 5px;
 }
 
-.whiskey-cards::-webkit-scrollbar-thumb {
+.cardRepo-cards::-webkit-scrollbar-thumb {
   border-radius: 0;
-  background-color: rgba(0, 0, 0, .5);
-  background: linear-gradient(90deg, #02bcf5, #0073e6, #003ab9, #635bff);
-  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-  border-radius: 16px;
-  opacity: .5;
+    background-color: rgba(0, 0, 0, .5);
+    background: linear-gradient(90deg, #02bcf5, #0073e6, #003ab9, #635bff);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    border-radius: 16px;
+    opacity: .5;
 }
 
-.whiskey-cards:hover::-webkit-scrollbar-thumb {
+.cardRepo-cards:hover::-webkit-scrollbar-thumb {
   opacity: 1;
 }
 
-.whiskey-card {
+.cardRepo-card {
   display: flex;
-  flex-direction: column;
-  min-width: 244px;
-  flex-basis: 244px;
-  border-radius: 16px;
-  margin: 8px;
-  padding: 16px;
-  box-shadow: 0 -16px 24px rgb(0 0 0 / 5%);
-  color: #ffffff;
+    flex-direction: column;
+    min-width: 244px;
+    flex-basis: 244px;
+    border-radius: 16px;
+    margin: 8px;
+    padding: 16px;
+    box-shadow: 0 -16px 24px rgb(0 0 0 / 5%);
+    color: #ffffff;
 
-  transition: all 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.whiskey-card:hover {
+.cardRepo-card:hover {
   background-color: #0a2540 !important;
-  transform: scale(1.04) translateY(-16px);
-  box-shadow: 0 -16px 24px rgb(0 0 0 / 10%);
+    transform: scale(1.04) translateY(-16px);
+    box-shadow: 0 -16px 24px rgb(0 0 0 / 10%);
+
 }
 
-.whiskey-card h3 {
+.cardRepo-card h3 {
   padding-top: 0;
-  line-height: 1.35;
+    line-height: 1.35;
 }
 
-.whiskey-card .whiskey-card--content {
+.cardRepo-card .cardRepo-card--content {
   line-height: 1.5;
-  font-size: 15px;
-  font-weight: 300;
+    font-size: 15px;
+    font-weight: 300;
 }
 
-.whiskey-card .whiskey-card--content img {
+.cardRepo-card .cardRepo-card--content img {
   max-width: 100%;
 }
 
-.whiskey-card .whiskey-card--link {
+.cardRepo-card .cardRepo-card--link {
   line-height: 1.5;
-  font-size: 15px;
-  font-weight: 700;
-  opacity: .7;
-  margin: auto 0 0 0;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: .7;
+    margin: auto 0 0 0;
 }
 
-.whiskey-card h3 a,
-.whiskey-card .whiskey-card--link a {
+.cardRepo-card h3 a,
+.cardRepo-card .cardRepo-card--link a {
   color: #ffffff;
 }
 
-.whiskey-card .whiskey-card--link a svg {
+.cardRepo-card .cardRepo-card--link a svg {
   --arrowSpacing: 5px;
-  --arrowHoverTransition: 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  --arrowHoverOffset: translateX(3px);
-  --arrowTipTransform: none;
-  --arrowLineOpacity: 0;
-  position: relative;
-  top: 1px;
-  margin-left: var(--arrowSpacing);
-  stroke-width: 2px;
-  fill: none;
-  stroke: currentColor;
+    --arrowHoverTransition: 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    --arrowHoverOffset: translateX(3px);
+    --arrowTipTransform: none;
+    --arrowLineOpacity: 0;
+    position: relative;
+    top: 1px;
+    margin-left: var(--arrowSpacing);
+    stroke-width: 2px;
+    fill: none;
+    stroke: currentColor;
 }
 
 .HoverArrow__linePath {
@@ -276,13 +277,14 @@ li {
   transition: transform var(--hoverTransition, var(--arrowHoverTransition));
 }
 
-.whiskey-card:hover .HoverArrow__linePath {
+.cardRepo-card:hover .HoverArrow__linePath {
   --arrowLineOpacity: 1;
 }
 
-.whiskey-card:hover .HoverArrow__tipPath {
+.cardRepo-card:hover .HoverArrow__tipPath {
   --arrowTipTransform: var(--arrowHoverOffset);
 }
+
 
 
 .fifth {
