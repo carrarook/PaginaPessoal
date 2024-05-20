@@ -59,39 +59,39 @@ async function listRepo() {
             description: repo.description
         }));
 
-        createCarrousel(filteredRepos); // Chama a função createCarrousel com os repositórios filtrados
+        createCarrousel(filteredRepos); 
     } catch (error) {
         console.error('Erro:', error);
     }
 }
 
 function createCarrousel(repos) {
-    const cardContainer = document.getElementById('cardContainer');
+    const cardContainer = document.getElementById('cardsContainer');
+    bgCardsSelector = null
+    // if (Math.floor(Math.random() * 2) % 2 == 0) {
+    //     bgCardsSelector = 
+    // } PRA TER DUAS COR ALEATORIA NO BG DOS CARDS
+   
+    cardContainer.innerHTML = ''; // reseta os cards
 
-    // Limpa o conteúdo atual do container
-    cardContainer.innerHTML = '';
-
-    // Itera sobre o array de repositórios
+    
     repos.forEach(repo => {
-        // Cria um novo elemento div para o card
+        // Cria uma nova div pra cada obj o do repo
         const card = document.createElement('div');
-        card.classList.add('cardRepo-card');
-        card.style.backgroundColor = '#02bcf5'; // Cor de fundo do card, você pode ajustar conforme necessário
+        card.classList.add('whiskey-card');
+        card.style.backgroundColor = '#679698'; // BG card
 
-        // Cria o conteúdo do card com base nos dados do objeto
+        // insere os conteudos nos cards
         card.innerHTML = `
             <h3><a href="${repo.link}" target="_blank">${repo.name}</a></h3>
             <p class="cardRepo-card--content">${repo.description}</p>
-            <p class="cardRepo-card--link"><a href="${repo.link}" target="_blank">Learn more <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><g fill-rule="evenodd"><path class="HoverArrow__linePath" d="M0 5h7"></path><path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path></g></svg></a></p>
+            <p class="cardRepo-card--link"><a href="${repo.link}" target="_blank">Ver repositório <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><g fill-rule="evenodd"><path class="HoverArrow__linePath" d="M0 5h7"></path><path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path></g></svg></a></p>
         `;
         console.log(repo)
-        // Adiciona o card ao container
+        // Adiciona o card no container 
         cardContainer.appendChild(card);
     });
 }
 
-// Chamada da função para listar os repositórios
+//função para listar os repositórios
 listRepo();
-
-
-// scroll carrosel
