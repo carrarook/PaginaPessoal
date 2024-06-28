@@ -7,7 +7,6 @@
 
 body {
   margin: 0;
-  font-family: 'Prompt', sans-serif;
   color: white;
   background: #202731;
   overflow-x: hidden;
@@ -431,3 +430,139 @@ input[type="submit"]:hover {
 .buttonEnviarContato:hover {
     color: white; }
 
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .first h1 {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .first h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .first h1 {
+    font-size: 5rem;
+  }
+}
+
+/* @media (max-width: 1200px) {
+  .subTitle {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subTitle {
+    margin-block-start: none;
+    margin-block-end: none;
+    margin-inline-start:none;
+    margin-inline-end: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .subTitle {
+    margin-block-start: none;
+    margin-block-end: none;
+    margin-inline-start:none;
+    margin-inline-end: none;
+    
+  }
+} */
+
+@media (max-width: 1200px) {
+  .third {
+    display: flex;
+flex-direction: row;
+align-items: center;
+  }
+  ul {order:1;}
+  .blob-motion{
+    order:2;
+  }
+  
+}
+
+@media (max-width: 899px) {
+  .third {
+    display: flex;
+flex-direction: row;
+align-items: center;
+  }
+  ul {
+    order:1;}
+  .blob-motion{
+    order:2;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  
+  .third {
+    display: flex;
+flex-direction: row-reverse;
+align-items: center;
+  }
+   
+  
+}
+@media (max-width: 1200px) {
+  .third ul {
+    font-size: 6rem;
+
+  }
+}
+
+@media (max-width: 899px) {
+  .third ul {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .third {
+    display: flex;
+    flex-direction: column; /* Flex direction column to stack items vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 50vh; /* Ensures the container takes full height of the viewport */
+  }
+  
+  .third ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    font-size: 1.2rem;
+    order: 1;
+  }
+  .thirdWave{
+    order: 0;
+  }
+  .blob-motion{
+    order: 2;
+  }
+}
